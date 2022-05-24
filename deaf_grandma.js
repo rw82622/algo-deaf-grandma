@@ -1,5 +1,6 @@
 function deafGrandma() {
   let count = 0;
+  console.log("HEY KID!");
   while (count < 2) {
     let userInput = prompt("Enter message");
     let capital = userInput.toUpperCase();
@@ -9,7 +10,7 @@ function deafGrandma() {
       console.log(`SPEAK UP, KID!`);
     } else if (userInput === "GOODBYE!") {
       count++;
-      console.log(`LEAVING SO SOON?`);
+      if (count < 2) console.log(`LEAVING SO SOON?`);
     } else if (capital === userInput) {
       console.log(`NO, NOT SINCE 1946!`);
     }
